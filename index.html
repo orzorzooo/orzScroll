@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>orzScroll</title>
+	<link rel="stylesheet" href="animate.css">
+	<!-- 出處 : http://daneden.github.io/animate.css/ -->
+	<style type="text/css">
+		body{text-align: center;}
+		a{text-decoration: none;}
+		div{height: 300px;width: 300px;background-color: #ccc;margin: 50px auto;}
+		div:nth-child(odd){	background-color: black;}
+	</style>
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="jquery.orzScroll.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('div:nth-child(even)').orzScroll();
+		$('div:nth-child(odd)').orzScroll({
+			animation:'fadeInRight'
+		});
+	});
+	</script>
+</head>
+<body>
+	<h1>請搭配<a href="http://daneden.github.io/animate.css/">animate css</a>服用</h1>
+	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+</body>
+</html>
