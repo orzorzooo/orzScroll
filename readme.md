@@ -1,4 +1,4 @@
-### orzScroll()
+### jquery.orzScroll.js
 
 ***
 
@@ -23,24 +23,24 @@
 ### 設定
 目前有三個參數可以作設定
 
-** animation **
+**animation**
 
-指定動畫的效果，請參考[animate css](http://daneden.github.io/animate.css/), 預設為** 'fadeInLeft' **
+指定動畫的效果，請參考[animate css](http://daneden.github.io/animate.css/), 預設為 **'fadeInLeft'**
 	
 	animation:'fadeInRight'
 
 
 
-** delay **
+**delay**
 
-指定動畫觸發的延遲時間，可針對某些特定情形作延遲，預設為** '0s' **
+指定動畫觸發的延遲時間，可針對某些特定情形作延遲，預設為 **'0s'**
 
 	delay:'0.5s'
 
 
-** offset **
+**offset**
 
-在某些情況下，或許會希望往下滾動後不要那麼快消失，一直在那邊跑也很煩，可將offset設定大一點，往下滾動再滾回來時就不會一直消失-觸發，預設為** 0 **
+在某些情況下，或許會希望往下滾動後不要那麼快消失，一直在那邊跑也很煩，可將offset設定大一點，往下滾動再滾回來時就不會一直消失-觸發，預設為 **0**
 
 	offset:100
 
