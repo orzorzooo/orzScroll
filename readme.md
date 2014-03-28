@@ -50,6 +50,8 @@
 	$(function(){
 		$('div:nth-child(even)').orzScroll();
 		$('div:nth-child(odd)').orzScroll({
-			animation:'fadeInRight'
+			animation:'fadeInRight',
+			delay:'2s',
+			offset:300
 		});
 	});

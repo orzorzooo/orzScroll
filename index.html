@@ -15,9 +15,12 @@
 	<script type="text/javascript" src="jquery.orzScroll.min.js"></script>
 	<script type="text/javascript">
 	$(function(){
-		$('div:nth-child(even)').orzScroll();
+		$('div:nth-child(even)').orzScroll({
+			animation:'bounceIn'
+		});
 		$('div:nth-child(odd)').orzScroll({
-			animation:'fadeInRight'
+			animation:'bounceIn',
+			delay:'2s'
 		});
 	});
 	</script>
@@ -25,5 +28,6 @@
 <body>
 	<h1>請搭配<a href="http://daneden.github.io/animate.css/">animate css</a>服用</h1>
 	<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+
 </body>
 </html>
