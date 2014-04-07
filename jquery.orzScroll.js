@@ -9,6 +9,8 @@
 		var orzSetting = $.extend(orzProperty,setting);
 		return this.each(function(){
 			$(this).css('opacity','0').addClass('animated');
+			$(this).css('-webkit-animation-delay',orzProperty.delay);
+			$(this).css('animation-delay',orzProperty.delay);
 			var thisClass = $(this)
 			  , thisClassTop = $(this).offset().top
 			  , thisClassBottom = thisClassTop + ($(this).height())+orzProperty.offset
@@ -21,8 +23,6 @@
 				if((currentScrollCenter > thisClassTop)&&(currentScrollCenter < thisClassBottomOffset)){
 					thisClass.addClass(thisAnimation);
 					thisClass.css('opacity','1');
-					thisClass.css('-webkit-animation-delay',orzProperty.delay);
-					thisClass.css('animation-delay',orzProperty.delay);
 				}else if((currentScroll > thisClassBottom) || (currentScrollBottom < thisClassTop)){
 					thisClass.removeClass(thisAnimation);
 					thisClass.css('opacity','0');
